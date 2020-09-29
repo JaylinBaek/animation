@@ -1,0 +1,47 @@
+
+
+@-webkit-keyframes jaylin {
+	0% {
+		transform:rotate(0deg);
+	}
+
+	100%{
+		transform:rotate(360deg);
+	}
+}
+
+@-webkit-keyframes jj{
+	0%{
+		transform: rotate3d(0deg);
+	}
+	100% {
+		transform: rotate3d(360deg);
+	}
+}
+
+.box {
+	width: 200px;
+	height: 200px;
+	background-color: #E4C0C7;
+
+	transition-property: background-color;
+	transition-duration: 2s
+}
+
+.box:hover {
+	background-color: #CFD0D2;
+	animation: jaylin 3s linear infinite;
+}
+
+.long-box {
+	width: 800px;
+	height: 200px;
+	background-color:#8B4F6E;
+	transition-property: background-color;
+	transition-duration: 3s
+}
+
+.long-box:hover {
+	background-color: #541D38;
+	animation: jj 6s infinite;
+}
